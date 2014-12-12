@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="404px" height="437px" viewBox="0 0 404 437" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#959595" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+        <ellipse id="path-2" cx="173.5" cy="307.5" rx="173.5" ry="37.5"></ellipse>
+        <linearGradient x1="29.2253521%" y1="120.3125%" x2="17.2535211%" y2="-48.4375%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D1D1D1" offset="59.8173516%"></stop>
+            <stop stop-color="#959595" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="49.4309157%" id="linearGradient-4">
+            <stop stop-color="#FEFEFE" offset="0%"></stop>
+            <stop stop-color="#E0E0E0" offset="44.7183099%"></stop>
+            <stop stop-color="#FFFFFF" offset="80.2816901%"></stop>
+            <stop stop-color="#CACACA" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-5" cx="142" cy="92" rx="142" ry="32"></ellipse>
+        <ellipse id="path-6" cx="142" cy="32" rx="142" ry="32"></ellipse>
+        <path d="M283.847,29.5012134 L284,29.5000012 L284,91 C284,108.673112 220.424434,123 142,123 C63.5755655,123 -3.48263806e-07,108.673112 0,91 C1.06546034e-06,36.9317918 0,31.75 0,31.75 L0.0382041062,31.7496973 C1.80582656,49.0765059 64.6875243,63 142,63 C220.424434,63 284,48.673112 284,31 C284,30.4976127 283.948626,29.9979295 283.846998,29.5012024 Z" id="path-7"></path>
+        <ellipse id="path-8" cx="142" cy="32" rx="142" ry="32"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Oval-230" sketch:type="MSLayerGroup" transform="translate(26.000000, 52.000000)">
+            <g>
+                <use fill="url(#radialGradient-1)" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                <use fill="none" xlink:href="#path-2"></use>
+            </g>
+            <g id="Oval-229-+-Oval-234" transform="translate(32.000000, 195.000000)" sketch:type="MSShapeGroup">
+                <ellipse id="Oval-229" fill="url(#linearGradient-3)" cx="142" cy="32" rx="142" ry="32"></ellipse>
+                <path d="M283.847,29.5012134 L284,29.5000012 L284,91 C284,108.673112 220.424434,123 142,123 C63.5755655,123 -3.48263806e-07,108.673112 0,91 C1.06546034e-06,36.9317918 0,31.75 0,31.75 L0.0382041062,31.7496973 C1.80582656,49.0765059 64.6875243,63 142,63 C220.424434,63 284,48.673112 284,31 C284,30.4976127 283.948626,29.9979295 283.846998,29.5012024 Z" id="Oval-231" fill="url(#linearGradient-4)"></path>
+            </g>
+            <g id="Oval-229-+-Oval-235" transform="translate(32.000000, 130.000000)">
+                <g id="Oval-230" opacity="0.380597015">
+                    <use fill="none" sketch:type="MSShapeGroup" xlink:href="#path-5"></use>
+                    <use fill="#576371" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <g id="Oval-229" opacity="0.753731343">
+                    <use fill="none" sketch:type="MSShapeGroup" xlink:href="#path-6"></use>
+                    <use fill="#576371" fill-rule="evenodd" xlink:href="#path-6"></use>
+                </g>
+                <g id="Oval-231" opacity="0.514925373">
+                    <use fill="none" sketch:type="MSShapeGroup" xlink:href="#path-7"></use>
+                    <use fill="#576371" fill-rule="evenodd" xlink:href="#path-7"></use>
+                </g>
+            </g>
+            <g id="Oval-229-+-Oval-236" transform="translate(32.000000, 65.000000)" sketch:type="MSShapeGroup">
+                <ellipse id="Oval-229" fill="url(#linearGradient-3)" cx="142" cy="32" rx="142" ry="32"></ellipse>
+                <path d="M283.847,29.5012134 L284,29.5000012 L284,91 C284,108.673112 220.424434,123 142,123 C63.5755655,123 -3.48263806e-07,108.673112 0,91 C1.06546034e-06,36.9317918 0,31.75 0,31.75 L0.0382041062,31.7496973 C1.80582656,49.0765059 64.6875243,63 142,63 C220.424434,63 284,48.673112 284,31 C284,30.4976127 283.948626,29.9979295 283.846998,29.5012024 Z" id="Oval-231" fill="url(#linearGradient-4)"></path>
+            </g>
+            <g id="Oval-229-+-Oval-237" transform="translate(32.000000, 0.000000)">
+                <g id="Oval-229">
+                    <use fill="url(#linearGradient-3)" sketch:type="MSShapeGroup" xlink:href="#path-8"></use>
+                    <use fill-opacity="0.471014493" fill="#576371" xlink:href="#path-8"></use>
+                </g>
+                <path d="M283.847,29.5012134 L284,29.5000012 L284,91 C284,108.673112 220.424434,123 142,123 C63.5755655,123 -3.48263806e-07,108.673112 0,91 C1.06546034e-06,36.9317918 0,31.75 0,31.75 L0.0382041062,31.7496973 C1.80582656,49.0765059 64.6875243,63 142,63 C220.424434,63 284,48.673112 284,31 C284,30.4976127 283.948626,29.9979295 283.846998,29.5012024 Z" id="Oval-231" fill="url(#linearGradient-4)" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
