@@ -1,0 +1,107 @@
+main.decommissionnement{
+
+	// illustration gauche
+	.side-image.gauche{
+		background: white;
+		@include outer-container;
+		h2{
+			text-transform: none;
+			font-weight: 100;
+		}
+		.images-wrapper {
+			background: white;
+			position: relative;
+			img{
+				position: absolute;
+				right: -2em;
+				top: -4em;
+				max-width: inherit;
+			}
+		}
+
+	  .images-wrapper {
+	      @include span-columns(5);
+	  }
+
+	  .content {
+	      @include span-columns(7);
+	      padding-right: 0;
+	      padding-left: 0;
+	  }
+	}
+
+	// illustration droite
+	.side-image.droite{
+		background: white;
+		@include outer-container;
+		.images-wrapper {
+			background: white;
+			position: relative;
+			img{
+				position: absolute;
+				left: 0;
+				top: 3em;
+			}
+		}
+
+	  .images-wrapper {
+	      @include span-columns(4);
+	  }
+
+	  .content {
+	      @include span-columns(8);
+	      padding: 4em;
+	  }
+	}
+
+	.middle.gauche{
+	    @include row(table);
+	    padding: 4em 0;
+
+	  .images-wrapper {
+	    display: block;
+	    min-height: 12em;
+	    padding: 3em;
+		@include span-columns(6);
+		position: relative;
+		img{
+			position: absolute;
+			right: 2em;
+		}
+
+	  }
+
+	  .content {
+	      @include span-columns(6);
+	      padding: 12em 4em 8em 4em;
+	  }
+	  @include reset-display();
+	}
+
+	.sextuple.white{
+	
+		padding: 4em;
+		padding-top: 12em;
+		padding-bottom: 9em;
+		text-align: center;
+
+		.bullet-icon{
+			@include span-columns(2);
+			padding-top: 2em;
+			text-align: left;
+		}
+		.bullet-content{
+			text-align: left;
+			@include span-columns(10);
+			padding-right: 4em;
+		}
+	
+		button{
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 6em;
+		}
+
+	}
+
+}

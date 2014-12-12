@@ -1,0 +1,136 @@
+main.realisations{
+	.hero{
+		$hero-background-top: $qerto-bleu-soft; 
+		$hero-background-bottom: $qerto-bleu-soft;
+		$gradient-angle: 0deg;
+		$hero-image: '/images/Ordi-1.png';
+
+		@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		padding-bottom: 4em;
+		.hero-inner{
+			color: white;
+			padding: 8em 0 3.4em 0;
+		}
+		h2{
+			text-transform: inherit;
+			font-weight: 100;
+		}
+	}
+	.hero-inner{
+		.hero-copy{
+			@include span-columns(8);
+			text-align: left;
+			p {
+				@include omega;
+				font-family: $serif;
+				margin: auto;
+				margin-bottom: 3em; 
+				font-weight: 200;
+				line-height: 1.4em;
+				max-width: 100%;
+
+			}
+			button{
+				margin-top: 4em;
+			}
+		}
+	}
+
+	// iullustrration gauche
+	.side-image.gauche{
+		background: white;
+		.images-wrapper {
+			background: white;
+			position: relative;
+			img{
+				position: absolute;
+				right: 0;
+				top: 5em;
+			}
+		}
+
+	  .images-wrapper {
+	      @include span-columns(4);
+	  }
+
+	  .content {
+	      @include span-columns(8);
+	      padding: 10em 8em 10em 4em;
+	  }
+	}
+
+	// double
+	.double.white{
+		text-align: center;
+		article{
+			@include span-columns(6);
+			padding:  0 4em;
+			margin-top: 2em;
+			text-align: left;
+		}
+	}
+
+	.middle.gauche{
+		background: white;
+		.images-wrapper {
+			background: $qerto-bleu-soft;
+			position: relative;
+			color: white;
+			padding: 8em 0 8em 0;
+			padding-left: 10em;
+			.icon{
+				color: white;
+				font-size: 8em;
+			}
+
+		}
+
+	  .images-wrapper {
+	    width: 50%;
+	    @include omega;
+	  }
+
+	  .content {
+	      width: 50%;
+	      padding: 4em 8em 0em 4em;
+	      button{
+	      	margin-top: 2em;
+	      }
+	  }
+	}
+
+	.middle.droite{
+		background: white;
+		.images-wrapper {
+			background: $qerto-bleu-soft;
+			position: relative;
+			color: white;
+			padding: 8em 0 8em 0;
+			padding-left: 10em;
+			.icon{
+				color: white;
+				font-size: 8em;
+				position: absolute;
+			}
+
+		}
+
+	  .images-wrapper {
+	    width: 50%;
+	    @include omega;
+	  }
+
+	  .content {
+	      width: 50%;
+	      padding: 8em 8em 8em 4em;
+	      button{
+	      	margin-top: 2em;
+	      }
+	  }
+	}
+
+}

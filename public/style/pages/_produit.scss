@@ -1,0 +1,81 @@
+main.produit{
+	.hero.top{
+		background: #323a45; /* Old browsers */
+		background: -moz-linear-gradient(top,  #323a45 50%, #4b71a7 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#323a45), color-stop(100%,#4b71a7)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #323a45 50%,#4b71a7 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #323a45 50%,#4b71a7 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #323a45 50%,#4b71a7 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #323a45 50%,#4b71a7 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323a45', endColorstr='#4b71a7',GradientType=0 ); /* IE6-9 */
+		padding-bottom: 0;
+		.hero-inner{
+			padding: 9em 6em 6em 6em;
+			padding-bottom: 0;
+		}
+		img{
+			margin-bottom: -7px;
+		}
+	}
+
+	// double 
+	.puissance{
+		text-align: center;
+		background-image: url('/images/produit-puissance-top.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		article{
+			@include span-columns(6);
+			padding:  0 8em;
+			margin-top: 2em;
+			text-align: left;
+		}
+	}
+
+	// double souple
+	.souple{
+		text-align: center;
+		background-image: url('/images/produit-puissance-bottom.png');
+		background-repeat: no-repeat;
+		background-position: center top;
+		article{
+			@include span-columns(6);
+			padding:  0 8em;
+			margin-top: 2em;
+			text-align: left;
+		}
+	}
+
+	.hero.souplesse{
+		  $hero-background-top: $qerto-bleu-soft; 
+		  $hero-background-bottom: $qerto-bleu-soft;
+		  $gradient-angle: 0deg;
+		  $hero-image: '/images/Ordi-1.png';
+
+		  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+
+		  background-repeat: no-repeat;
+		  background-position: top;
+		  background-size: cover;
+		  padding-bottom: 4em;
+		  .hero-inner{
+		  	color: white;
+		  	padding: 6em 6em 4em 6em;
+		  }
+	}
+
+	// triple
+	// triple
+	.triple.grey{
+		.solution{
+			text-align: center;
+		}
+		a.button{
+			margin: 4em 0 3em;
+		}
+	}
+	.bullets{
+		text-align: center;
+	}
+
+}

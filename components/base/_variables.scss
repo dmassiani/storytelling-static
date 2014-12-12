@@ -1,9 +1,10 @@
 // Typography
-$sans-serif: $opensans;
-$serif: $roboto;
+// $sans-serif: $opensans;
+// $serif: $roboto;
+$sans-serif: 'Questrial', sans-serif;
+$serif: 'Sanchez', serif;
 $base-font-family: $sans-serif;
 $header-font-family: $serif;
-
 // Font Sizes
 $base-font-size: 1em;
 $h1-font-size: $base-font-size * 2.25;

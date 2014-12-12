@@ -7,20 +7,101 @@ $visual-grid-opacity: 0.2;
 @import "components/base/base";
 @import "components/harp-neat/scss/neat";
 
+
+// colors :
+
+$qerto-white: #fff;
+$qerto-grey: #E1E5E8;
+$qerto-bleu-soft: #576371;
+$qerto-bleu: #323A45;
+$qerto-bleu-hard: #1E2126;
+$qerto-text: #646E79;
+$qerto-red: #CC274E;
+
+// layout
+$qerto-gutter: 80px;
+
 // composants custom
-// @import "components/_buttons";
-// @import "components/_typography";
+
+@import "components/qerto";
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
+
+// Sections
+@import "sections/heros";
+@import "sections/baseline";
+@import "sections/illustration";
+@import "sections/triple";
+
+// Custom Page
+@import "pages/_homepage";
+@import "pages/_produit";
+@import "pages/_services";
+@import "pages/_realisations";
+@import "pages/_decommissionnement";
+@import "pages/_excel";
 
 body{
 	background: #fff;
-	color: #444343;
+	color: $qerto-text;
 	margin: 0;
 }
-
-.container {
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+.icon{
+	font-size: 4em;
+}
+.main-container{
 	@include outer-container;
-	padding: 0 20px;
-	@include media($xlarge-screen) {
-		padding: 0;
+}
+
+// generale apply gutter
+.main-wrapper
+, .side-image .content{
+	padding: $qerto-gutter;
+}
+footer.bleu-hard{
+	background: $qerto-bleu-hard;
+	color: white;
+}
+
+.main-wrapper {
+
+	// =================================
+	//
+	// background colors :
+	//
+	// =================================
+	&.grey{
+		background: $qerto-grey;
 	}
+	&.bleu-soft{
+		background: $qerto-bleu-soft;
+		color: white;
+	}
+	&.bleu{
+		background: $qerto-bleu;
+		color: white;
+	}
+	&.bleu-hard{
+		background: $qerto-bleu-hard;
+		color: white;
+	}
+	&.red{
+		background: #CC274E;
+		color: white;
+	}
+
+	// =================================
+	//
+	// layout globale :
+	//
+	// =================================
+	&.baseline{
+		text-align: center;
+	}
+
 }

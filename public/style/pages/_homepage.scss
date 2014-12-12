@@ -1,0 +1,96 @@
+main.homepage{
+	.hero{
+		background: white;
+		h2{
+			text-transform: inherit;
+			font-weight: 100;
+		}
+	}
+	.hero-inner{
+		color: $qerto-text;
+		padding: 9em 6em 6em 6em;
+	}
+
+	// baseline grey
+	.baseline.grey{
+		h3{
+			font-weight: 100;
+			text-transform: inherit;
+		}
+	}
+
+	// bleu soft
+	.main-wrapper.bleu-soft{
+		min-height: 400px;
+	}
+
+	//double soft
+	article{
+		@include span-columns(6);
+		text-align: center;
+		h4{
+			margin-bottom: 1em;
+		}
+		p{
+			padding: 0 2em;
+		}
+	}
+	
+	// illustration droite
+	.side-image.droite {
+	  background: #fff;
+	  margin-bottom: $qerto-gutter;
+
+	  	.images-wrapper {
+	  		background: url('../images/homepage-internet-droite.png') right center no-repeat;
+		    background-color: white;
+		    border: none;
+		    min-height: 12em;
+		    padding: 3em;
+	  	}	
+	}
+
+	.side-image.gauche {
+	  background: #fff;
+	  margin-bottom: $qerto-gutter;
+
+	  	.images-wrapper {
+	  		background: url('../images/homepage-internet-gauche.png') left center no-repeat;
+		    background-color: white;
+		    border: none;
+		    min-height: 14em;
+		    padding: 3em;
+	  	}	
+	  	.content{
+	  		height: 400px;
+	  		min-height: 400px;
+	  	}
+	}
+
+	
+	// triple
+	.triple.grey{
+		.solution{
+			text-align: center;
+		}
+		a.button{
+			margin: 4em 0 3em;
+		}
+	}
+	.bullets{
+		text-align: center;
+	}
+
+	// innovant
+	.baseline.bleu-soft{
+		padding: 10em 0 8em 0;
+		a{
+			color: white;
+		}
+		.icon{
+			float: right;
+			margin-top: -85px;
+		}
+	}
+
+}
