@@ -127,7 +127,7 @@ $(function() {
                 'msg'           : $('textarea[name=message]').val()
             };
 
-            var formData = new FormData( this );
+            var formData = new FormData( $( this )[0] );
 
 
             console.log(formData);
