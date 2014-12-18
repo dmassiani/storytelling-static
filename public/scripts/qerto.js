@@ -77,7 +77,7 @@ $(function() {
     $('input[type=file]').on('change', prepareUpload);
     function prepareUpload(event)
     {
-        console.log('prepare file');
+        console.log(event.target.files);
         files = event.target.files;
     }
 
@@ -130,7 +130,7 @@ $(function() {
             // console.log(post_data);
 
             var formData = new FormData( $( this )[0] );
-            
+
             files = event.target.files;
 
             $.each(files, function(key, value)
