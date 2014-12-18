@@ -85,7 +85,6 @@ $(function() {
         event.stopPropagation();
 	    event.preventDefault();
 
-        alert('mop');
 
         var proceed = true;
         //simple validation at client's end
@@ -108,12 +107,14 @@ $(function() {
 
         if( $('#contact-form input[name=url]').val() != "" ){
 
-        	proceed = false;
+            proceed = false;
         }
        
         if(proceed) //everything looks good! proceed...
         {
 
+            alert('mop');
+            
             //get input field values data to be sent to server
             post_data = {
                 'user_name'     : $('input[name=name]').val(), 
