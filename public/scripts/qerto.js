@@ -132,40 +132,40 @@ $(function() {
 
             console.log(formData);
 
-            // $.ajax({
-            //     url: 'real-uploader.php',
-            //     type: 'POST',
-            //     data: formData,
-            //     async: false,
-            //     success: function (response) {
-            //         if(response.type == 'error'){ //load json data from server and output message     
-            //             output = '<div class="error">'+response.text+'</div>';
-            //         }else{
-            //             output = '<div class="success">'+response.text+'</div>';
-            //             //reset values in all input fields
-            //             $("#contact-form  input[required=true], #contact-form textarea[required=true]").val(''); 
-            //             $("#contact-form .form").slideUp(); //hide form after success
-            //         }
-            //         $("#contact-form #contact-results").hide().html(output).slideDown();
-            //     },
-            //     cache: false,
-            //     contentType: false,
-            //     processData: false
-            // });
+            $.ajax({
+                url: 'real-mailer.php',
+                type: 'POST',
+                data: formData,
+                async: false,
+                success: function (response) {
+                    if(response.type == 'error'){ //load json data from server and output message     
+                        output = '<div class="error">'+response.text+'</div>';
+                    }else{
+                        output = '<div class="success">'+response.text+'</div>';
+                        //reset values in all input fields
+                        $("#contact-form-recrutement  input[required=true], #contact-form-recrutement textarea[required=true]").val(''); 
+                        $("#contact-form-recrutement .form").slideUp(); //hide form after success
+                    }
+                    $("#contact-form #contact-results").hide().html(output).slideDown();
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
 
-            //Ajax post data to server
-            $.post('real-mailer.php', formData, function(response){  
+            // //Ajax post data to server
+            // $.post('real-mailer.php', formData, function(response){  
 
-                if(response.type == 'error'){ //load json data from server and output message     
-                    output = '<div class="error">'+response.text+'</div>';
-                }else{
-                    output = '<div class="success">'+response.text+'</div>';
-                    //reset values in all input fields
-                    $("#contact-form-recrutement  input[required=true], #contact-form-recrutement textarea[required=true]").val(''); 
-                    $("#contact-form-recrutement .form").slideUp(); //hide form after success
-                }
-                $("#contact-form-recrutement #contact-results").hide().html(output).slideDown();
-            }, 'json');
+            //     if(response.type == 'error'){ //load json data from server and output message     
+            //         output = '<div class="error">'+response.text+'</div>';
+            //     }else{
+            //         output = '<div class="success">'+response.text+'</div>';
+            //         //reset values in all input fields
+            //         $("#contact-form-recrutement  input[required=true], #contact-form-recrutement textarea[required=true]").val(''); 
+            //         $("#contact-form-recrutement .form").slideUp(); //hide form after success
+            //     }
+            //     $("#contact-form-recrutement #contact-results").hide().html(output).slideDown();
+            // }, 'json');
         }
 	    //reset previously set border colors and hide all message on .keyup()
 	    $("#contact-form-recrutement  input[required=true], #contact-form-recrutement textarea[required=true]").keyup(function() { 
