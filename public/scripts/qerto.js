@@ -94,12 +94,14 @@ $(function() {
             if(!$.trim($(this).val())){ //if this field is empty 
                 $(this).css('border-color','red'); //change border color to red   
                 proceed = false; //set do not proceed flag
+                alert('proceed false 1');            
             }
             //check invalid email
             var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
             if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
                 $(this).css('border-color','red'); //change border color to red   
-                proceed = false; //set do not proceed flag              
+                proceed = false; //set do not proceed flag  
+                alert('proceed false 2');            
             }   
         });
 
@@ -108,13 +110,14 @@ $(function() {
         if( $('#contact-form input[name=url]').val() != "" ){
 
             proceed = false;
+                alert('proceed url');            
         }
        
         if(proceed) //everything looks good! proceed...
         {
 
             alert('mop');
-            
+
             //get input field values data to be sent to server
             post_data = {
                 'user_name'     : $('input[name=name]').val(), 
