@@ -15,6 +15,8 @@ if($_POST)
     } 
 
     var_dump($_POST);
+    var_dump($_GET);
+    var_dump($_FILES);
     
     //Sanitize input data using PHP filter_var().
     $user_name      = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);

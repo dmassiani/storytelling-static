@@ -129,7 +129,8 @@ $(function() {
 
 
             // console.log(post_data);
-
+            console.log($( this )[0]);
+            
             var formData = new FormData( $( this )[0] );
 
             // files = event.target.files;
