@@ -75,7 +75,7 @@ $(function() {
 
     });
 
-    // $('input[type=file]').on('change', prepareUpload);
+    $('input[type=file]').on('change', prepareUpload);
     function prepareUpload(event)
     {
         // console.log(event.target.files);
@@ -132,11 +132,11 @@ $(function() {
 
             var formData = new FormData( $( this )[0] );
 
-            files = event.target.files;
+            // files = event.target.files;
 
             $.each(files, function(key, value)
             {
-                post_data.append(key, value);
+                formData.append(key, value);
             });
 
             console.log(formData);
