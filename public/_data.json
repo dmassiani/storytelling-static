@@ -1,6 +1,15 @@
 {
-  "index": {
-    "title": "Qerto, créateur d'applications en mode Saas",
-    "description": "Qerto créé, édite et héberge des applications en mode Saas. L'outil développé par Qerto décommissionne vos applications."
-  }
+  	"index": {
+	    "title": "Qerto, créateur d'applications en mode Saas",
+	    "description": "Qerto créé, édite et héberge des applications en mode Saas. L'outil développé par Qerto décommissionne vos applications.",
+	    "heros-h1": "Créations d'applications par modélisation",    
+	    "heros-h2": "Quand l'informatique apporte simplicité, efficacité et performance",    
+	    "heros-p": "Par une technologie de modélisation avancée, nous créons ensemble les applications correspondant exactement à vos besoins.Le délai de création d'une application est de quelques jours à quelques semaines.",
+	    "heros-button": "Découvrez notre produit",
+	    "baseline": "QERTO est éditeur et intégrateur d'applications d'informatique de gestion",
+	    "double-h4-one": "Gestion puissante des droits",
+	    "double-h4-two": "Une gestion des droits intégralement déléguée à votre organisation. Adapter à votre organisation. Nous vous déléguons la gestion complète des droits via une interface d’administration. Vous ?",
+	    "double-p-one": "Interface souple paramétrable",
+	    "double-p-two": "Chaque application offre en standard une interface souple pour s’adapter aux besoins utilisateurs dans la limite de leurs droits."
+  	}
 }
