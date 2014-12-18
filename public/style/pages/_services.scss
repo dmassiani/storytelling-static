@@ -22,8 +22,9 @@ main.services{
 	}
 	.hero-inner{
 		.hero-copy{
-			@include span-columns(8);
+			@include span-columns(6);
 			text-align: left;
+			padding-left: 2em;
 			p {
 				@include omega;
 				font-family: $serif;
@@ -31,13 +32,11 @@ main.services{
 				margin-bottom: 3em; 
 				font-weight: 200;
 				line-height: 1.4em;
+				max-width: 100%;
 
-				@include media($large-screen) {
-					max-width: 100%;
-				}
 			}
-			button{
-				margin-top: 4em;
+			a.button{
+				margin-top: 1em;
 			}
 		}
 	}
@@ -76,8 +75,9 @@ main.services{
 
 	// illustraytiob droitz
 	.side-image.droite{
-		background: $qerto-bleu;
+		background: $qerto-bleu-soft;
 		color: white;
+		padding-bottom: 100px;
 		.images-wrapper {
 			background: none;
 			position: relative;
@@ -89,21 +89,17 @@ main.services{
 		}
 
 	  .images-wrapper {
-	    @include media($large-screen) {
 	      @include span-columns(4);
+	      @include omega;
 	      background-position: bottom;
 	      background-size: cover;
-	    }
 	  }
 
 	  .content {
-	    @include span-columns(12);
-	    padding: 1em 1em 4em 1em;
 
-	    @include media($large-screen) {
 	      @include span-columns(8);
 	      padding: 10em 8em 10em 4em;
-	    }
+
 	  }
 	}
 

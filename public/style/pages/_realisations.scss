@@ -34,7 +34,7 @@ main.realisations{
 				max-width: 100%;
 
 			}
-			button{
+			a.button{
 				margin-top: 4em;
 			}
 		}
@@ -58,7 +58,7 @@ main.realisations{
 	  }
 
 	  .content {
-	      @include span-columns(8);
+	      @include span-columns(7);
 	      padding: 10em 8em 10em 4em;
 	  }
 	}
@@ -75,59 +75,73 @@ main.realisations{
 	}
 
 	.middle.gauche{
-		background: white;
+		background: $qerto-bleu-soft;
+		@include fill-parent();
+		@include row(table);
 		.images-wrapper {
-			background: $qerto-bleu-soft;
 			position: relative;
 			color: white;
+			// @include span-columns(6);
+			// @include pad();
+			width: 50%;
+			display: table-cell;
+
 			padding: 8em 0 8em 0;
 			padding-left: 10em;
 			.icon{
 				color: white;
-				font-size: 8em;
+				font-size: 12em;
 			}
 
-		}
-
-	  .images-wrapper {
-	    width: 50%;
-	    @include omega;
-	  }
+	  	}
 
 	  .content {
-	      width: 50%;
+		// @include span-columns(6);
+	 //    @include reset-display();
+		// @include pad();
+			background: white;
+			display: table-cell;
+			width: 50%;
+			vertical-align: top;
+
 	      padding: 4em 8em 0em 4em;
-	      button{
+	      a.button{
 	      	margin-top: 2em;
 	      }
 	  }
 	}
 
 	.middle.droite{
-		background: white;
+		background: $qerto-bleu-soft;
+		@include fill-parent();
+		@include row(table);
 		.images-wrapper {
-			background: $qerto-bleu-soft;
 			position: relative;
 			color: white;
-			padding: 8em 0 8em 0;
+			padding: 4em 0 8em 0;
 			padding-left: 10em;
+			position: absolute;
 			.icon{
 				color: white;
-				font-size: 8em;
-				position: absolute;
+				font-size: 12em;
 			}
 
 		}
 
-	  .images-wrapper {
-	    width: 50%;
-	    @include omega;
-	  }
+		.images-wrapper {
+			// @include span-columns(6);
+			// @include pad();
+			display: table-cell;
+			width: 50%;
+		}
 
 	  .content {
-	      width: 50%;
-	      padding: 8em 8em 8em 4em;
-	      button{
+
+			background: white;
+			vertical-align: top;
+	    	padding: 4em 8em 8em 4em;
+			display: table-cell;
+	      a.button{
 	      	margin-top: 2em;
 	      }
 	  }

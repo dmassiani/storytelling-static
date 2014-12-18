@@ -79,7 +79,8 @@ main.decommissionnement{
 	}
 
 	.sextuple.white{
-	
+		
+		@include outer-container();
 		padding: 4em;
 		padding-top: 12em;
 		padding-bottom: 9em;
@@ -96,7 +97,7 @@ main.decommissionnement{
 			padding-right: 4em;
 		}
 	
-		button{
+		a.button{
 			text-align: center;
 			margin: 0 auto;
 			margin-top: 6em;

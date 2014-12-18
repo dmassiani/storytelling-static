@@ -1,3 +1,8 @@
+@import url("//hello.myfonts.net/count/2c36f5");
+
+@font-face {font-family: 'AvenirNextLTPro-Bold';src: url('/style/fonts/2C36F5_0_0.eot');src: url('/style/fonts/2C36F5_0_0.eot?#iefix') format('embedded-opentype'),url('/style/fonts/2C36F5_0_0.woff') format('woff'),url('/style/fonts/2C36F5_0_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirNextLTPro-Medium';src: url('/style/fonts/2C36F5_1_0.eot');src: url('/style/fonts/2C36F5_1_0.eot?#iefix') format('embedded-opentype'),url('/style/fonts/2C36F5_1_0.woff') format('woff'),url('/style/fonts/2C36F5_1_0.ttf') format('truetype');}
+ 
 @import "components/harp-bourbon/scss/bourbon";
 @import "settings/typography";
 $visual-grid: false;
@@ -41,11 +46,13 @@ $qerto-gutter: 80px;
 @import "pages/_realisations";
 @import "pages/_decommissionnement";
 @import "pages/_excel";
+@import "pages/_recrutement";
 
 body{
 	background: #fff;
 	color: $qerto-text;
 	margin: 0;
+	min-width: 1200px;
 }
 h1,h2,h3,h4,h5,h6{
 	text-transform: uppercase;

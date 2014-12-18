@@ -1,7 +1,8 @@
 <?php
 if($_POST)
 {
-    $to_email       = "davidmassianirennes@gmail.com"; //Recipient email, Replace with own email here
+    $to_email       = "contact@qerto.fr"; //Recipient email, Replace with own email here
+    $subject = 'Contact via Qerto.fr';
     
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -49,7 +50,7 @@ if($_POST)
         $output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
         die($output);
     }else{
-        $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_name .' Thank you for your email'));
+        $output = json_encode(array('type'=>'message', 'text' => 'Merci pour votre email, nous vous répondrons le plus rapidement possible.'));
         die($output);
     }
 }

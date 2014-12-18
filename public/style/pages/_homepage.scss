@@ -1,6 +1,10 @@
 main.homepage{
 	.hero{
-		background: white;
+		background-color: white;
+		background-image: url("/images/connexion-bleu.svg");
+		background-position: bottom;
+		background-size: 100% auto;
+		padding-bottom: 8em;
 		h2{
 			text-transform: inherit;
 			font-weight: 100;
@@ -16,17 +20,22 @@ main.homepage{
 		h3{
 			font-weight: 100;
 			text-transform: inherit;
+			margin-bottom: 0;
 		}
 	}
 
 	// bleu soft
 	.main-wrapper.bleu-soft{
-		min-height: 400px;
+		min-height: 350px;
 	}
 
 	//double soft
+	article:first-child{
+		@include span-columns(5);
+		@include shift(1);
+	}
 	article{
-		@include span-columns(6);
+		@include span-columns(5);
 		text-align: center;
 		h4{
 			margin-bottom: 1em;
@@ -40,6 +49,7 @@ main.homepage{
 	.side-image.droite {
 	  background: #fff;
 	  margin-bottom: $qerto-gutter;
+	  margin-top: $qerto-gutter;
 
 	  	.images-wrapper {
 	  		background: url('../images/homepage-internet-droite.png') right center no-repeat;
@@ -55,7 +65,7 @@ main.homepage{
 	  margin-bottom: $qerto-gutter;
 
 	  	.images-wrapper {
-	  		background: url('../images/homepage-internet-gauche.png') left center no-repeat;
+	  		background: url('../images/homepage-internet-gauche.png') -3em center no-repeat;
 		    background-color: white;
 		    border: none;
 		    min-height: 14em;
@@ -70,6 +80,9 @@ main.homepage{
 	
 	// triple
 	.triple.grey{
+		h3{
+			font-size: 1.25em;
+		}
 		.solution{
 			text-align: center;
 		}
@@ -84,12 +97,15 @@ main.homepage{
 	// innovant
 	.baseline.bleu-soft{
 		padding: 10em 0 8em 0;
+		h2{
+			margin-bottom: 0;
+		}
 		a{
 			color: white;
 		}
 		.icon{
 			float: right;
-			margin-top: -85px;
+			margin-top: -63px;
 		}
 	}
 

@@ -2,6 +2,7 @@ div.main-wrapper.contact.bleu
 	div.main-container
 		section#contact
 			form#contact-form(method="", action="fake-mailer.php")
+				#contact-results
 				.form
 					h2 Nous contacter
 					.form-left
@@ -25,15 +26,15 @@ div.main-wrapper.contact.bleu
 							label(for='message') Message
 							textarea#message(name='message', rows='10', required="true")
 
-				#contact-error
-				p.submit
-					input.button.qerto.red(type='submit', value='Envoyer')
+					#contact-error
+					p.submit
+						input.button.qerto.red(type='submit', value='Envoyer')
 
 		
-footer.footer.bleu-hard
+footer.footer
 	.footer-links
 		ul
-			li
+			li.logo
 				img(src='/images/Qerto-white.svg', alt='Logo image')
 		ul
 			li

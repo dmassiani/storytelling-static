@@ -53,6 +53,14 @@
 	padding: $base-spacing*2 $gutter;
 	width: 100%;
 
+	background-image: url("/images/connexion-footer.svg");
+	background-color: $qerto-bleu-hard;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% auto;
+
+	padding-bottom: 12em;
+
 	.footer-logo {
 		text-align: center;
 		margin-bottom: 2em;
@@ -64,21 +72,25 @@
 
 	.footer-links {
 		@include clearfix;
-		margin-bottom: $base-spacing;
+		// margin-bottom: $base-spacing;
 
-		@include media($medium-screen) {
-			@include shift(1);
-		}
+		@include span-columns(8);
+		@include shift(2);
+		@include omega;
+		float: none;
 	}
 
 	ul {
 		margin-bottom: $base-spacing*2;
 
-		@include media($medium-screen) {
-			@include span-columns(4);
-			@include omega(3n);
-			@include clearfix;
-		}
+		@include span-columns(4);
+		@include omega(3n);
+		@include clearfix;
+
+	}
+
+	li.logo{
+		list-style: none;
 	}
 
 	li {

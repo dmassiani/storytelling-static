@@ -58,6 +58,9 @@ main.produit{
 		  background-position: top;
 		  background-size: cover;
 		  padding-bottom: 4em;
+		  h2{
+		  	text-transform: uppercase;
+		  }
 		  .hero-inner{
 		  	color: white;
 		  	padding: 6em 6em 4em 6em;
@@ -67,6 +70,9 @@ main.produit{
 	// triple
 	// triple
 	.triple.grey{
+		h3{
+			font-size: 1.25em;
+		}
 		.solution{
 			text-align: center;
 		}

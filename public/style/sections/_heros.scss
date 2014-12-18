@@ -44,9 +44,7 @@
         font-weight: 200;
         line-height: 1.4em;
 
-        @include media($large-screen) {
-          max-width: 40%;
-        }
+        max-width: 70%;
       }
     }
   }
