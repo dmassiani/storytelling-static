@@ -77,6 +77,7 @@ $(function() {
     $('input[type=file]').on('change', prepareUpload);
     function prepareUpload(event)
     {
+        console.log('prepare file');
         files = event.target.files;
     }
 
