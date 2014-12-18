@@ -85,6 +85,8 @@ $(function() {
         event.stopPropagation();
 	    event.preventDefault();
 
+        alert('mop');
+
         var proceed = true;
         //simple validation at client's end
         //loop through each field and we simply change border color to red for invalid fields       
