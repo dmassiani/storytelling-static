@@ -133,11 +133,12 @@ $(function() {
             console.log(formData);
 
             $.ajax({
-                url: 'real-mailer.php',
+                url: '/real-mailer.php',
                 type: 'POST',
                 data: formData,
                 async: false,
                 success: function (response) {
+                    console.log(response);
                     if(response.type == 'error'){ //load json data from server and output message     
                         output = '<div class="error">'+response.text+'</div>';
                     }else{
