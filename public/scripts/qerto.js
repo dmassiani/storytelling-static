@@ -147,7 +147,7 @@ $(function() {
                         $("#contact-form-recrutement  input[required=true], #contact-form-recrutement textarea[required=true]").val(''); 
                         $("#contact-form-recrutement .form").slideUp(); //hide form after success
                     }
-                    $("#contact-form #contact-results").hide().html(output).slideDown();
+                    $("#contact-form-recrutement #contact-results").hide().html(output).slideDown();
                 },
                 cache: false,
                 contentType: false,
