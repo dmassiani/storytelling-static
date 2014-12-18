@@ -87,9 +87,10 @@ $(function() {
 
 
         var proceed = true;
+
         //simple validation at client's end
         //loop through each field and we simply change border color to red for invalid fields       
-        $("#contact-form input[required=true], #contact-form textarea[required=true]").each(function(){
+        $("#contact-form-recrutement input[required=true], #contact-form-recrutement textarea[required=true]").each(function(){
             $(this).css('border-color',''); 
             if(!$.trim($(this).val())){ //if this field is empty 
                 $(this).css('border-color','red'); //change border color to red   
@@ -107,7 +108,7 @@ $(function() {
 
 
 
-        if( $('#contact-form input[name=url]').val() != "" ){
+        if( $('#contact-form-recrutement input[name=url]').val() != "" ){
 
             proceed = false;
                 alert('proceed url');            
@@ -163,14 +164,14 @@ $(function() {
                 }else{
                     output = '<div class="success">'+response.text+'</div>';
                     //reset values in all input fields
-                    $("#contact-form  input[required=true], #contact-form textarea[required=true]").val(''); 
-                    $("#contact-form .form").slideUp(); //hide form after success
+                    $("#contact-form-recrutement  input[required=true], #contact-form-recrutement textarea[required=true]").val(''); 
+                    $("#contact-form-recrutement .form").slideUp(); //hide form after success
                 }
-                $("#contact-form #contact-results").hide().html(output).slideDown();
+                $("#contact-form-recrutement #contact-results").hide().html(output).slideDown();
             }, 'json');
         }
 	    //reset previously set border colors and hide all message on .keyup()
-	    $("#contact-form  input[required=true], #contact-form textarea[required=true]").keyup(function() { 
+	    $("#contact-form-recrutement  input[required=true], #contact-form-recrutement textarea[required=true]").keyup(function() { 
 	        $(this).css('border-color',''); 
 	    });
 
