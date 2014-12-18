@@ -9,6 +9,7 @@ $(function() {
    // Get the form.
     var form = $('#contact-form');
     var formRecrutement = $('#contact-form-recrutement');
+    var files;
 
     // Get the messages div.
     var formMessages = $('#form-messages');
@@ -77,7 +78,7 @@ $(function() {
     $('input[type=file]').on('change', prepareUpload);
     function prepareUpload(event)
     {
-        console.log(event.target.files);
+        // console.log(event.target.files);
         files = event.target.files;
     }
 
