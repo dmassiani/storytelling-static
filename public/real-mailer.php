@@ -35,13 +35,53 @@ if($_POST)
     }
     
     //email body
+    $boundary = md5(uniqid(microtime(), TRUE));
     $message_body = $message."\r\n\r\n-".$user_name."\r\nEmail : ".$user_email."\r\nSociété : ".$user_society ;
     
     //proceed with PHP email.
     $headers = 'From: '.$user_name.'' . "\r\n" .
     'Reply-To: '.$user_email.'' . "\r\n" .
+    'Content-Type: multipart/mixed;boundary='.$boundary."\r\n" .
     'X-Mailer: PHP/' . phpversion();
-    
+
+
+    // attachement
+    if(isset($_GET['files']))
+    {
+        foreach($_FILES as $file)
+        {
+            if(move_uploaded_file($file['tmp_name'], $uploaddir .basename($file['name'])))
+            {
+                $file_name = $uploaddir .$file['name'];
+
+                $uploaddir = 'uploads';
+                if( !is_dir( $uploaddir )){
+                    mkdir($uploaddir);
+                }
+                if (file_exists($file_name))
+                {
+                    $file_type = filetype($file_name);
+                    $file_size = filesize($file_name);
+                 
+                    $handle = fopen($file_name, 'r') or die('File '.$file_name.'can t be open');
+                    $content = fread($handle, $file_size);
+                    $content = chunk_split(base64_encode($content));
+                    $f = fclose($handle);
+                 
+                    $message_body .= '--'.$boundary."\r\n";
+                    $message_body .= 'Content-type:'.$file_type.';name='.$file_name."\r\n";
+                    $message_body .= 'Content-transfer-encoding:base64'."\r\n";
+                    $message_body .= $content."\r\n";
+                }
+            }
+            else
+            {
+                $error = true;
+            }
+        }
+
+    }
+
     $send_mail = mail($to_email, $subject, $message_body, $headers);
     
     if(!$send_mail)

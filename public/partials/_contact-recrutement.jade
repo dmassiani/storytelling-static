@@ -1,22 +1,22 @@
 div.main-wrapper.contact.bleu
 	div.main-container
 		section#contact
-			form#contact-form(method="", action="fake-mailer.php")
+			form#contact-form-recrutement(method="", action="fake-mailer.php")
 				#contact-results
 				.form
 					h2 Nous contacter
-					.form-left
+					.form
 						p
 							label(for='name') Nom Prénom
 							input#name(type='text', name='name', required="true")
-					.form-right
-						p
-							label(for='society') Société
-							input#society(type='text', name='society')
 					.form-bottom
 						p
 							label(for='email') Email
 							input#email(type='email', name='email', required="true")
+
+						p
+							label(for='cv') CV (PDF)
+							input#cv(type='file', name='cv')
 
 						p.url
 							label(for='url') Url

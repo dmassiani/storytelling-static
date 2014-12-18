@@ -1,16 +1,80 @@
 main.content.homepage
+
 	.hero
 		.hero-inner
 			.hero-copy
-				h1 #{ heros-h1 }
-				h2 #{ heros-h2 }
+				h1 #{ herosh1 }
+				h2 #{ herosh2 }
 				p 
-					| #{ heros-p }
-			a.button.qerto.red(href="/produit/") #{ heros-button }
+					| #{ herosp }
+			a.button.qerto.red(href="/produit/") #{ herosbutton }
 
-	!= partial("sections/_baseline-grey-homepage")
-	!= partial("sections/_double-bleu-soft-homepage")
-	!= partial("sections/_illustration-droite-homepage")
-	!= partial("sections/_illustration-gauche-homepage")
-	!= partial("sections/_triple-grey-homepage")
-	!= partial("sections/_baseline-blue-homepage")
+
+	div.main-wrapper.baseline.grey
+		div.main-container
+			h3 #{ baseline }
+
+
+	div.main-wrapper.bleu-soft
+		div.main-container
+			article
+				.icon.icon-user-lock
+				h4 #{ doubleh4one }
+				p 
+					| #{ doublepone }
+			article
+				.icon.icon-setting
+				h4 #{ doubleh4two }
+				p 
+					| #{ doubleptwo }
+
+
+	div.side-image.droite
+		div.content
+			h2 #{ illustrationdroiteh2 }
+			p
+				| #{ illustrationdroitepone }
+				| #{ illustrationdroiteptwo }
+			ul
+				li #{ illustrationdroitelione }
+				li #{ illustrationdroitelitwo }
+		div.images-wrapper
+
+
+	div.side-image.gauche
+		div.images-wrapper
+		div.content
+			h2 #{ sideh2 }
+			p
+				| #{ sidep }
+
+	div.main-wrapper.triple.grey
+		div.main-container
+			ul.bullets
+				li.bullet.three-col-bullet
+					.icon.icon-power
+					.bullet-content
+						h3 #{ tripleh3one }
+						p
+							| #{ triplepone }
+				li.bullet.three-col-bullet
+					.icon.icon-plugin
+					.bullet-content
+						h3 #{ tripleh3two }
+						p
+							| #{ tripleptwo }
+				li.bullet.three-col-bullet
+					.icon.icon-piggy-bank
+					.bullet-content
+						h3 #{ tripleh3three }          
+						p
+							| #{ triplepthree }
+			
+			div.solution
+				a(href="/produit/", class="button qerto bleu-soft border") #{ solution }
+
+	div.main-wrapper.baseline.bleu-soft
+		div.main-container
+			a(href="/produit/")
+				h2 #{ produith2 }
+				.icon.icon-arrow

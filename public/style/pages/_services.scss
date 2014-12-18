@@ -1,4 +1,7 @@
 main.services{
+	h1 a, h2 a{
+		color: inherit;
+	}
 	.hero{
 		$hero-background-top: $qerto-bleu-soft; 
 		$hero-background-bottom: $qerto-bleu-soft;
