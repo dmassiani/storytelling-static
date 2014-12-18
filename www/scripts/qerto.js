@@ -129,10 +129,7 @@ $(function() {
 
             var formData = new FormData( this );
 
-            $.each(files, function(key, value)
-            {
-                formData.append(key, value);
-            });
+
             console.log(formData);
 
             // $.ajax({
