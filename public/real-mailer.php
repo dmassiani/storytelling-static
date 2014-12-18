@@ -13,6 +13,8 @@ if($_POST)
         ));
         die($output); //exit script outputting json data
     } 
+
+    var_dump($_POST);
     
     //Sanitize input data using PHP filter_var().
     $user_name      = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);
