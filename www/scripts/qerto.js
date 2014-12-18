@@ -75,7 +75,7 @@ $(function() {
 
     });
 
-    $('input[type=file]').on('change', prepareUpload);
+    // $('input[type=file]').on('change', prepareUpload);
     function prepareUpload(event)
     {
         // console.log(event.target.files);
