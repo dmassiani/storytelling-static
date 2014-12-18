@@ -40,29 +40,12 @@
 .button,
 button,
 input[type="submit"]{
-  &.qerto.red{
-    @include button( $qerto-red, white );
-    &.border{
-      @include button( $qerto-red, $qerto-red );
-    }
-  }
-  &.qerto.bleu{
-    @include button( $qerto-bleu, white );
-    &.border{
-      @include button( $qerto-bleu, $qerto-bleu );
-    }
-  }
-  &.qerto.white{
-    @include button( white, $qerto-bleu );
-    &.border{
-      @include button( white, white );
-    }
-  }
-  &.qerto.bleu-soft{
-		@include button( $qerto-bleu-soft, white );
-    &.border{
-      @include button( $qerto-bleu-soft, $qerto-bleu-soft );
-    }
-  }
+
+  // &.story.red{
+  //   @include button( $story-red, white );
+  //   &.border{
+  //     @include button( $story-red, $story-red );
+  //   }
+  // }
 
 }

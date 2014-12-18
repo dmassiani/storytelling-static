@@ -1,8 +1,3 @@
-@import url("//hello.myfonts.net/count/2c36f5");
-
-@font-face {font-family: 'AvenirNextLTPro-Bold';src: url('/style/fonts/2C36F5_0_0.eot');src: url('/style/fonts/2C36F5_0_0.eot?#iefix') format('embedded-opentype'),url('/style/fonts/2C36F5_0_0.woff') format('woff'),url('/style/fonts/2C36F5_0_0.ttf') format('truetype');}
-@font-face {font-family: 'AvenirNextLTPro-Medium';src: url('/style/fonts/2C36F5_1_0.eot');src: url('/style/fonts/2C36F5_1_0.eot?#iefix') format('embedded-opentype'),url('/style/fonts/2C36F5_1_0.woff') format('woff'),url('/style/fonts/2C36F5_1_0.ttf') format('truetype');}
- 
 @import "components/harp-bourbon/scss/bourbon";
 @import "settings/typography";
 $visual-grid: false;
@@ -13,21 +8,13 @@ $visual-grid-opacity: 0.2;
 @import "components/harp-neat/scss/neat";
 
 
-// colors :
-
-$qerto-white: #fff;
-$qerto-grey: #E1E5E8;
-$qerto-bleu-soft: #576371;
-$qerto-bleu: #323A45;
-$qerto-bleu-hard: #1E2126;
-$qerto-text: #646E79;
-$qerto-red: #CC274E;
+// colors
+$story-text: #646E79;
 
 // layout
-$qerto-gutter: 80px;
+$story-gutter: 4em;
 
 // composants custom
-
 @import "components/header";
 @import "components/footer";
 @import "components/buttons";
@@ -48,66 +35,19 @@ $qerto-gutter: 80px;
 // @import "pages/_recrutement";
 
 body{
-	background: #fff;
-	color: $qerto-text;
+	background: #eee;
+	color: $story-text;
 	margin: 0;
-	min-width: 1200px;
-}
-h1,h2,h3,h4,h5,h6{
-	text-transform: uppercase;
-	margin-bottom: 1em;
-}
-.icon{
-	font-size: 4em;
 }
 .main-container{
 	@include outer-container;
 }
 
-// generale apply gutter
-.main-wrapper
-, .side-image .content{
-	padding: $qerto-gutter;
-}
-footer.bleu-hard{
-	background: $qerto-bleu-hard;
-	color: white;
+#svg{
+	width: 400px;
+	height: 300px;
 }
 
-.main-wrapper {
-
-	// =================================
-	//
-	// background colors :
-	//
-	// =================================
-	&.grey{
-		background: $qerto-grey;
-	}
-	&.bleu-soft{
-		background: $qerto-bleu-soft;
-		color: white;
-	}
-	&.bleu{
-		background: $qerto-bleu;
-		color: white;
-	}
-	&.bleu-hard{
-		background: $qerto-bleu-hard;
-		color: white;
-	}
-	&.red{
-		background: #CC274E;
-		color: white;
-	}
-
-	// =================================
-	//
-	// layout globale :
-	//
-	// =================================
-	&.baseline{
-		text-align: center;
-	}
-
+.inner{
+	text-align: center;
 }

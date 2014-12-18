@@ -1,8 +1,8 @@
 header.navigation {
   $navigation-padding: 1em;
   $navigation-background: white;
-  $navigation-color: $qerto-text;
-  $navigation-color-hover: darken($qerto-text,10%);
+  $navigation-color: $story-text;
+  $navigation-color-hover: darken($story-text,10%);
   $navigation-height: 80px;
   $navigation-nav-button-background: $base-accent-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10);

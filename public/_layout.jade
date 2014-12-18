@@ -4,14 +4,14 @@ html
 		title= title
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		meta(name="description" content="#{ description }")
+
 		link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Questrial")
 		link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Sanchez:400italic,400")
 		link(rel="stylesheet" href="/style/main.css")
 		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+		script(data-main="scripts/app" src="components/requirejs/require.js")
 
 	body
 		!= partial("partials/_header")
 		!= yield
-		!= partial("partials/_contact")
 		!= partial("partials/_footer")
