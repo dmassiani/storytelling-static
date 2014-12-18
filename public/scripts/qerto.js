@@ -74,6 +74,12 @@ $(function() {
 
     });
 
+    $('input[type=file]').on('change', prepareUpload);
+    function prepareUpload(event)
+    {
+        files = event.target.files;
+    }
+
 	$(formRecrutement).on('submit', function(event) {
 	    // Stop the browser from submitting the form.
         event.stopPropagation();
@@ -115,6 +121,12 @@ $(function() {
             };
 
             var formData = new FormData( this );
+
+            $.each(files, function(key, value)
+            {
+                formData.append(key, value);
+            });
+            console.log(formData);
 
             // $.ajax({
             //     url: 'real-uploader.php',
