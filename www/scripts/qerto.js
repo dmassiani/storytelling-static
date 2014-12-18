@@ -126,12 +126,12 @@ $(function() {
                 'msg'           : $('textarea[name=message]').val()
             };
 
-            $.each(files, function(key, value)
-            {
-                post_data.append(key, value);
-            });
+            // $.each(files, function(key, value)
+            // {
+            //     post_data.append(key, value);
+            // });
 
-            console.log(post_data);
+            // console.log(post_data);
 
             var formData = new FormData( $( this )[0] );
 
