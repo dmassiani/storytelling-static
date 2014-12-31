@@ -25,29 +25,49 @@ $story-gutter: 4em;
 @import "sections/illustration";
 @import "sections/triple";
 
-// Custom Page
-// @import "pages/_homepage";
-// @import "pages/_produit";
-// @import "pages/_services";
-// @import "pages/_realisations";
-// @import "pages/_decommissionnement";
-// @import "pages/_excel";
-// @import "pages/_recrutement";
 
 body{
-	background: #eee;
+	background: #fff;
 	color: $story-text;
 	margin: 0;
 }
-.main-container{
+.inner{
 	@include outer-container;
 }
 
-#svg{
-	width: 400px;
-	height: 300px;
+.howto{
+	background: #333;
+	color: white;
+	.inner{
+		padding: 5em 3em;
+	}
 }
 
-.inner{
-	text-align: center;
+#page{
+	width: 300px;
+	height: 530px;
+	margin-left: -60px;
+}
+
+.imac{
+	display: inline-block;
+	position: relative;
+}
+#imac{
+	width: 500px;
+	height: 306px;
+	display: block;
+}
+#imacbottom{
+	width: 500px;
+	height: 106px;
+	display: block;
+}
+
+#browser{
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	top: 40px;
+	left: 45px;
 }

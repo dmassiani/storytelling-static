@@ -1,8 +1,8 @@
 header.navigation {
   $navigation-padding: 1em;
-  $navigation-background: white;
-  $navigation-color: $story-text;
-  $navigation-color-hover: darken($story-text,10%);
+  $navigation-background: rgba(255, 255, 255, 0.13);
+  $navigation-color: white;
+  $navigation-color-hover: darken(white,10%);
   $navigation-height: 80px;
   $navigation-nav-button-background: $base-accent-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10);
@@ -18,6 +18,7 @@ header.navigation {
   height: $navigation-height;
   width: 100%;
   z-index: 999;
+	position: absolute;
 
   .navigation-wrapper {
 	@include clearfix;

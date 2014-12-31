@@ -1,40 +1,55 @@
 .hero {
-  $hero-background-top: #7F99BE; 
-  $hero-background-bottom: #20392B;
+  $hero-background-bottom: #C828FF; 
+  $hero-background-top: #110F61;//#3CC4FF, #C828FF
   $hero-color: white;
-  $gradient-angle: 10deg;
-  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+  $gradient-angle: 40deg;
+  $hero-image: '/images/desktop.png';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
 
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
-  padding-bottom: 4em;
+  // background: #222225;
+  // padding-bottom: 4em;
 
-  h2{
-    text-transform: inherit;
-    font-weight: 100;
-  }
 
   .hero-logo img {
-    height: 3em;
+    height: 7em;
     margin-bottom: 2.5em;
   }
 
   .hero-inner {
-    @include outer-container;
+    // @include outer-container;
     @include clearfix;
-    padding: 3em;
+    padding: 10em;
+    padding-top: 8em;
+    padding-bottom: 0;
     margin: auto;
-    text-align: center;
     color: $hero-color;
-
+    .hero-animation{
+      @include span-columns(6);
+      line-height: 0;
+      padding-top: 2em;
+    }
     .hero-copy {
-      text-align: center;
+
+      @include span-columns(6);
+
       
       h1 {
-        margin-bottom: 0;
+        font-size: 1.6em;
+        // font-weight: 100;
+        margin-bottom: .1em;
+        line-height: 1;
+        text-transform: uppercase;
+        // background: -webkit-linear-gradient(left, #6632FF, #FF3077);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        @include media($large-screen) {
+          font-size: 3.2em;
+          // max-width: 70%;
+        }
       }
 
       p {
@@ -44,7 +59,9 @@
         font-weight: 200;
         line-height: 1.4em;
 
-        max-width: 70%;
+        @include media($large-screen) {
+          font-size: 1.1em;
+        }
       }
     }
   }

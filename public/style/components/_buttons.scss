@@ -11,7 +11,7 @@
   text-decoration: none;
   text-transform: uppercase;
   @include transition (all 2.0s ease);
-  
+
   &:focus{outline: none;}
 
   &:hover {
@@ -28,7 +28,8 @@
   &.border{
     color: $text-color;
     background: transparent;
-    border: 1px solid $background-color;
+    border: 2px solid $text-color;
+
     &:hover{
       background: transparent;
       border-color: darken( $background-color , 10% );
@@ -41,11 +42,8 @@
 button,
 input[type="submit"]{
 
-  // &.story.red{
-  //   @include button( $story-red, white );
-  //   &.border{
-  //     @include button( $story-red, $story-red );
-  //   }
-  // }
+  &.story{
+    @include button( #10DAF4, #fff );
+  }
 
 }
