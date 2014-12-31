@@ -1,9 +1,9 @@
 .hero {
-  $hero-background-bottom: #C828FF; 
-  $hero-background-top: #110F61;//#3CC4FF, #C828FF
+  $hero-background-bottom: #2A2B34; 
+  $hero-background-top: #000;//#3CC4FF, #C828FF
   $hero-color: white;
   $gradient-angle: 40deg;
-  $hero-image: '/images/desktop.png';
+  $hero-image: '/images/moine.png';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
 
@@ -22,46 +22,57 @@
   .hero-inner {
     // @include outer-container;
     @include clearfix;
-    padding: 10em;
-    padding-top: 8em;
-    padding-bottom: 0;
+    padding: 4em;
+    padding-top: 6em;
+
+    @include media($max-width) {
+      padding: 10em;
+      padding-top: 12em;
+      padding-bottom: 0;
+    }
+
     margin: auto;
     color: $hero-color;
     .hero-animation{
-      @include span-columns(6);
-      line-height: 0;
-      padding-top: 2em;
+        line-height: 0;
+        padding-top: 6em;
+        // @include span-columns(12);
+        display: none;
+        @include media($max-width) {
+          @include span-columns(6);
+        }
     }
     .hero-copy {
 
-      @include span-columns(6);
+        // @include span-columns(12);
+        @include media($max-width) {
+          @include span-columns(6);
+        }
 
       
       h1 {
         font-size: 1.6em;
-        // font-weight: 100;
         margin-bottom: .1em;
         line-height: 1;
         text-transform: uppercase;
-        // background: -webkit-linear-gradient(left, #6632FF, #FF3077);
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
         @include media($large-screen) {
-          font-size: 3.2em;
-          // max-width: 70%;
+          font-size: 3.6em;
         }
       }
 
       p {
         font-family: $serif;
         margin: auto;
-        margin-bottom: 3em; 
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.4em;
 
         @include media($large-screen) {
           font-size: 1.1em;
         }
+      }
+
+      .button{
+        margin-top: 3em;
       }
     }
   }
