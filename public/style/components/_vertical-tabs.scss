@@ -10,8 +10,7 @@
   $vertical-tab-mode: $medium-screen;
 
   @include clearfix;
-  border-radius: $tab-border-radius;
-  // border: $tab-border;
+
   margin-bottom: $base-spacing;
   overflow: hidden;
 
@@ -19,7 +18,6 @@
     display: none;
 
     @include media($vertical-tab-mode) {
-      background-color: $tab-inactive-color;
       display: inline;
       float: left;
       height: $vertical-tabs-height;
@@ -29,22 +27,19 @@
 
   .vertical-tab {
     @include media($vertical-tab-mode) {
-      // border-bottom: $tab-border;
       display: block;
-      font-weight: bold;
-      margin-right: -1px;
       padding: $base-spacing/2 $gutter/2;
 
       &.is-active {
-        background-color: $tab-content-background;
-        margin-right: -1px;
+        background-color: #1BC5E4;
+        color: white;
       }
     }
   }
 
   a.vertical-tab-accordion-heading,
   a.vertical-tab {
-    color: $dark-gray;
+    color: #9B9B9B;
   }
 
   .vertical-tab:focus {
@@ -54,6 +49,13 @@
   .vertical-tab-content-container {
     display: block;
     margin: 0 auto;
+    font-size: 1.2em;
+    color: #4F4F4F;
+    font-weight: 300;
+
+    h2{
+      margin-top: 1em;
+    }
 
     & a:focus { 
       outline: none; 
@@ -62,16 +64,14 @@
     @include media($vertical-tab-mode) {
       display: inline-block;
       @include size(80% $vertical-tabs-height);
-      // background-color: $tab-content-background;
     }
+
   }
 
   .vertical-tab-content {
-    // background-color: $tab-content-background;
-    padding: $base-spacing $gutter;
+    padding: 0 3em;
 
     @include media($vertical-tab-mode) {
-      border: none;
       display: none;
     }
   }

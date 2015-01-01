@@ -19,6 +19,7 @@ $story-gutter: 4em;
 @import "components/footer";
 @import "components/buttons";
 @import "components/vertical-tabs";
+@import "components/prism";
 
 // Sections
 @import "sections/heros";
@@ -27,6 +28,12 @@ $story-gutter: 4em;
 @import "sections/triple";
 
 
+h1,h2,h3,h4,h5,h6{
+	font-weight: 300;
+}
+h2{
+	margin-bottom: .3em;
+}
 body{
 	background: #fff;
 	color: $story-text;
@@ -79,4 +86,190 @@ body{
 	position: absolute;
 	top: 40px;
 	left: 45px;
+}
+
+// code
+// 363636
+.sublime{
+	header{
+		display: block;
+		background: #363636;
+		height: 60px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		.reduce,
+		.close,
+		.full{
+			border-radius: 60px;
+			width: 12px;
+			height: 12px;
+			display: inline-block;
+			margin: 24px 12px 0 0;
+		}
+		.close{
+			background: #ff6058;
+			margin-left: 24px;
+		}
+		.reduce{
+			background: #ffbf2f;
+		}
+		.full{
+			background: #28ca41;
+		}
+	}
+	pre{
+		margin: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+}
+
+.code{
+	padding: 6em;
+	padding-top: 8em;
+	aside{
+		@include span-columns(3);
+		@include shift(1);
+		&:first{
+			text-align: right;
+		}
+	}
+	.sublime{
+		@include span-columns(7);
+	}
+	ul{
+		list-style: none;
+		li{
+			margin-top: 4em;
+			margin-bottom: 7em;
+		}
+	}
+}
+
+.unlimited{
+	background: #1BC5E4;
+	color: white;
+	text-align: center;
+	padding: 6em 0;
+}
+
+.admin{
+	background: #333;
+	color: white;
+	padding: 6em 0;
+
+	aside{
+		@include span-columns(6);
+	}
+	.content{
+		@include span-columns(6);
+		padding-top: 4em;
+		p{
+			@include span-columns(6);
+			@include shift(1);
+		}
+	}
+
+	.window{
+		background: white;
+		width: 100%;
+		display: block;
+		height: 620px; 
+		position: relative;
+		padding-top: 20px;
+		@include span-columns(8);
+		@include shift(4);
+		.reduce,
+		.close,
+		.full{
+			border-radius: 60px;
+			width: 6px;
+			height: 6px;
+			position: absolute;
+			top: 7px;
+			left: 10px;
+		}
+		.close{
+			background: #ff6058;
+		}
+		.reduce{
+			background: #ffbf2f;
+			left: 20px;
+		}
+		.full{
+			background: #28ca41;
+			left: 30px;
+		}
+		header{
+			background: #444;
+			height: 20px;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.sidebar-right{
+			background: #F4F4F4;
+			width: 20%;
+			height: 580px;
+			position: absolute;
+			right: 0;
+			top: 40px;
+			padding-top: 13px;
+			.button-a,
+			.button-b,
+			.button-c,
+			.button-d,
+			.button-e{
+				width: 80%;
+				margin-left: 10%;
+				margin-top: 7px;
+				height: 16px;
+				background: #1BC5E4;
+			}
+		}
+		.sidebar-left{
+			background: #444;
+			width: 20%;
+			height: 580px;
+			position: absolute;
+			left: 0;
+			top: 40px;
+		}
+		.wp-title, .wp-content{
+			background: #DADADA;
+			width: 50%;
+			margin-left: 25%;
+			height: 10px;
+			margin-top: 10px;
+		}
+		.wp-content{
+			height: 70px;
+			margin-top: 10px;
+		}
+	}
+
+}
+
+.story{
+	padding: 8em 0;
+	text-align: center;
+	h1{
+		text-align: center;
+		font-weight: 300;
+		font-size: 4em;
+		text-transform: lowercase;
+		margin-bottom: 1em;
+	}
+	p{
+		@include span-columns(2);
+		@include shift(5);
+		text-align: left;
+	}
+	.button{
+		margin-top: 4em;
+	}
+}
+
+.page-docs main{
+	padding-top: 80px;
+
 }

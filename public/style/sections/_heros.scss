@@ -20,13 +20,13 @@
   }
 
   .hero-inner {
-    // @include outer-container;
+    @include outer-container;
     @include clearfix;
-    padding: 4em;
+    // padding: 4em;
     padding-top: 6em;
 
     @include media($max-width) {
-      padding: 10em;
+      // padding: 10em;
       padding-top: 12em;
       padding-bottom: 0;
     }
@@ -39,14 +39,14 @@
         // @include span-columns(12);
         display: none;
         @include media($max-width) {
-          @include span-columns(6);
+          @include span-columns(7);
         }
     }
     .hero-copy {
 
         // @include span-columns(12);
         @include media($max-width) {
-          @include span-columns(6);
+          @include span-columns(5);
         }
 
       
@@ -55,6 +55,7 @@
         margin-bottom: .1em;
         line-height: 1;
         text-transform: uppercase;
+        font-weight: 700;
         @include media($large-screen) {
           font-size: 3.6em;
         }

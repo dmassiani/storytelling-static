@@ -22,3 +22,88 @@ main
 	.plugins
 		.inner
 			h2 test
+
+	.code
+		.inner
+			.sublime
+				.window
+					header
+						.close
+						.reduce
+						.full
+					.content
+						pre
+							code.language-php
+								| &lt;?php
+								| /*
+								| Template Name: Section Beautiful Product
+								| Description: Section with 2 titles, 2 contents and 2 illustrations
+								| ---------------------------------------------------------------------
+								| {"type": "title", "name": "Left title", "slug": "left_title"}
+								| {"type": "editor", "name": "Left content", "slug": "left_content"}
+								| {"type": "image", "name": "Left illustration", "slug": "left_illustration"}
+								| {"type": "title", "name": "Right title", "slug": "right_title"}
+								| {"type": "editor", "name": "Right content", "slug": "right_content"}
+								| {"type": "image", "name": "Right illustration", "slug": "right_illustration"}
+								| ---------------------------------------------------------------------
+								| */
+								| ?&gt;
+								| &lt;section&gt; 
+								| 	&lt;h1&gt;		&lt;?php the_title( 'left_title' ) ?&gt;&lt;/h1&gt;
+								| 	&lt;article&gt;	&lt;?php the_chapter( 'left_content' ) ?&gt;&lt;/article&gt;
+								| 	&lt;aside&gt;		&lt;?php the_illustration( 'left_illustration' ) ?&gt;&lt;/aside&gt;
+								|	&lt;article&gt;	&lt;?php the_chapter( 'right_content' ) ?&gt;&lt;/article&gt;
+								| 	&lt;aside&gt;		&lt;?php the_illustration( 'right_illustration' ) ?&gt;&lt;/aside&gt;
+								| &lt;/section&gt;
+			aside
+				ul
+					li
+						h2 Customers helper
+						p All the templates you have created can be reused as much as you like with different contents.
+					li
+						h2 Define Extra-content
+						p When you create a macro template, it is easy define the contents you require.
+					li
+						h2 Get Chapter
+						p You define your own templates, defining as much or as little of the contents as you want.
+
+	.unlimited
+		.inner
+			h1 You are no longer limited
+
+	.admin
+		.inner
+			aside
+				.window
+					.close
+					.reduce
+					.full
+					header
+					.sidebar-left
+					.sidebar-right
+						.button-a
+						.button-b
+						.button-c
+						.button-d
+						.button-e
+					.wp-title
+					.wp-content
+					.wp-title
+					.wp-content
+					.wp-content
+					.wp-title
+					.wp-content
+					.wp-title
+					.wp-title
+					.wp-content
+			.content
+				p Add any chapter you need and Storytelling add automaticaly extra content in your WordPress admin
+
+	.story
+		.inner
+			h1 the_story() begin
+			.content
+				p Anywhere you want in your page, template or custom-template.
+				p 
+					| Storytelling load your content what you have defined in your macro template.
+					a.button.story Download

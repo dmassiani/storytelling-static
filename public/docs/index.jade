@@ -4,15 +4,45 @@ main
 
 			div.vertical-tabs-container
 				div.vertical-tabs
-					a.js-vertical-tab.vertical-tab.is-active(href='javascript:void(0)', rel='tab1') Installation
+					a.js-vertical-tab.vertical-tab.is-active(href='javascript:void(0)', rel='tab0') Getting Started
+					a.js-vertical-tab.vertical-tab(href='javascript:void(0)', rel='tab1') Installation
 					a.js-vertical-tab.vertical-tab(href='javascript:void(0)', rel='tab2') Mise en route
 					a.js-vertical-tab.vertical-tab(href='javascript:void(0)', rel='tab3') Macro-template
 					a.js-vertical-tab.vertical-tab(href='javascript:void(0)', rel='tab4') Contribuer
 				div.vertical-tab-content-container
-					a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active(href='', rel='tab1') Item 1
+					a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active(href='', rel='tab0') Item 0
 					div#tab1.js-vertical-tab-content.vertical-tab-content
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.
+						
+						h1 Download project
+						a(href="https://github.com/dmassiani/WordPress-Storytelling/archive/master.zip") ARCHIVE ZIP
+						
+						h2 Install Plugins
+						p Activate plugin in your WordPress admin
+
+						h2 Added a new page
+						p Create story with Storytelling default template
+
+						h2 Add this code in template page or post
+						pre
+							code.language-php
+								| &lt;?php the_story(); ?&gt;
+						
+					a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading(href='', rel='tab1') Item 1
+					div#tab1.js-vertical-tab-content.vertical-tab-content
+						
+						p 3 methods for download project :
+						ul
+							li 
+								| Clone project via github to yours plugins wordpress install
+								| (recommanded method for contributing)
+								pre
+									code.language-php git clone https://github.com/dmassiani/WordPress-Storytelling.git
+							li
+								a(href="/")
+									| WordPress plugins
+							li
+								| Manual, download zip and extract to yours plugins folder
+
 					a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading(href='', rel='tab2') Item 2
 					div#tab2.js-vertical-tab-content.vertical-tab-content
 						p
@@ -20,7 +50,7 @@ main
 					a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading(href='', rel='tab3') Item 3
 					div#tab3.js-vertical-tab-content.vertical-tab-content
 						p
-						| Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.
+							| Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.
 					a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading(href='', rel='tab4') Item 4
 					div#tab4.js-vertical-tab-content.vertical-tab-content
 						p

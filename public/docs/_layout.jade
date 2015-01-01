@@ -9,11 +9,10 @@ html
 		link(rel="stylesheet" href="/style/main.css")
 
 		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-		script(src="scripts/prism.js")
-		script(src="scripts/storytelling.js")
-		script(data-main="scripts/app" src="components/requirejs/require.js")
+		script(src="/scripts/prism.js")
+		script(data-main="/scripts/docs" src="/components/requirejs/require.js")
 
-	body.page-home
-		!= partial("partials/_header-home")
+	body.page-docs
+		!= partial("../partials/_header")
 		!= yield
-		!= partial("partials/_footer")
+		!= partial("../partials/_footer")

@@ -1,6 +1,6 @@
 header.navigation {
   $navigation-padding: 1em;
-  $navigation-background: rgba(255, 255, 255, 0.13);
+  $navigation-background: rgba(255, 255, 255, 0);
   $navigation-color: white;
   $navigation-color-hover: darken(white,10%);
   $navigation-height: 80px;
@@ -325,4 +325,16 @@ header.navigation {
 	  }
 	}
   }
+}
+
+.page-docs{
+	header.navigation{
+		background: #333;
+		a.hero-logo{
+			img{
+				width: 8em;
+				margin-top: 10px;
+			}
+		}
+	}
 }
