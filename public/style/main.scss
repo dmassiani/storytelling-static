@@ -43,6 +43,15 @@ body{
 	@include outer-container;
 }
 
+::selection {
+  background: #1BC5E4; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #1BC5E4; /* Gecko Browsers */
+  color: white;
+}
+
 .plugins{
 	background: #333;
 	color: white;
